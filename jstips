@@ -1,0 +1,31 @@
+You can use { break; } to jump out of loops or switches.
+you can use { continue; } to skip a section of code in the loop
+ breaks can have labels so that they can be used outside of loops or switches
+ example
+ 
+var cars = ["BMW", "Volvo", "Saab", "Ford"];
+list: {
+    text += cars[0] + "<br>"; 
+    text += cars[1] + "<br>"; 
+    text += cars[2] + "<br>"; 
+    break list;
+    text += cars[3] + "<br>"; 
+    text += cars[4] + "<br>"; 
+    text += cars[5] + "<br>"; 
+}
+
+REGULAR EXPRESSIONS
+a sequence of characters that form a search pattern
+often used for case insensitive searching
+format:
+
+/pattern/modifier;
+
+this can be used with string methods .search(); and .replace();
+
+example:
+var str = "hello world"
+var n = str.search(/hello/i);
+
+modifiers
+i -> makes thing case insensitive
