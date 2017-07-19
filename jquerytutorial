@@ -1,0 +1,66 @@
+JQUERY NOTES
+
+jquery - code library
+used for manipulating html, css, etc
+
+
+basic syntax:
+$(selector).action();
+selector  to find html elements, based on css selectors
+action to be performed on the element
+
+Examples:
+
+$(this).hide() - hides the current element.
+
+$("p").hide() - hides all <p> elements.
+
+$(".test").hide() - hides all elements with class="test".
+
+$("#test").hide() - hides the element with id="test".
+
+
+PUT ALL JQUERY INSIDE HERE:
+$(document).ready(function(){
+
+   // jQuery methods go here...
+
+});
+
+so it doesn't load before document has finished loading
+
+MORE SYNTAX
+click -> event
+
+other event thingys include:
+click	keypress	submit	load
+dblclick	keydown	change	resize
+mouseenter	keyup	focus	scroll
+mouseleave	 	blur	unload
+
+$("p").click(function(){
+  // action goes here!!
+});
+
+
+
+SOME EFFECTS
+
+hide();
+show();
+fadein();
+fadeout();
+slideDown();
+slideUp();
+
+callbacks
+
+$("button").click(function(){
+    $("p").hide("slow", function(){
+        alert("The paragraph is now hidden");
+    });
+});
+
+for functions happening afterwards
+
+
