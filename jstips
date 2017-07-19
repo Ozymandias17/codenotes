@@ -27,5 +27,26 @@ example:
 var str = "hello world"
 var n = str.search(/hello/i);
 
+for replace
+
+var str = "Visit Microsoft!";
+var res = str.replace(/microsoft/i, "W3Schools");
+
+for test
+
+var patt = /e/;
+patt.test("The best things in life are free!");
+
+-> is true
+
+or even
+/e/.test("The best things in life are free!");
+
 modifiers
 i -> makes thing case insensitive
+g -> global match ( tries finding all matches and not just the first )
+m -> multiline matching
+
+brackets 
+[abc] -> tries finding any of the characters
+[1-9] -> tries finding any of the numbers shown and in between
