@@ -63,4 +63,55 @@ $("button").click(function(){
 
 for functions happening afterwards
 
+------------------------------------
 
+For editing DOM elements
+
+.html()
+.text()
+.val()
+.attr()
+FOR GETTING STUFF
+
+$("button").click(function(){
+    alert($("#w3s").attr("href"));
+});
+OR
+
+$("#btn1").click(function(){
+    alert("Text: " + $("#test").text());
+});
+
+FOR ADDING STUFF
+
+append() - Inserts content at the end of the selected elements
+prepend() - Inserts content at the beginning of the selected elements
+after() - Inserts content after the selected elements
+before() -
+Inserts content before the selected elements
+
+FOR SETTING STUFF
+
+$("#btn1").click(function(){
+    $("#test1").text("Hello world!");
+});
+
+
+$("p").append("Some appended text.");
+
+FOR REMOVING STUFF
+
+$("#div1").remove();
+
+
+FOR CSS EDITING
+
+addClass() - Adds one or more classes to the selected elements
+removeClass() - Removes one or more classes from the selected elements
+toggleClass() - Toggles between adding/removing classes from the selected elements
+css() - Sets or returns the style attribute
+
+$("button").click(function(){
+    $("h1, h2, p").addClass("blue");
+    $("div").addClass("important");
+});
